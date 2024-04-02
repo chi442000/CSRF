@@ -14,6 +14,9 @@ CSRF ( Cross Site Request Forgery) là kỹ thuật tấn công bằng cách s�
 	CSRF còn được gọi là "session riding", "XSRF"
 ### Types of Attacks
 #### GET Requests
+CSRF with GET Requests là hình thức lợi dụng việc truyền param vào trong URL thông qua HTTP requests, kẻ tấn công có thể thay đổi giá trị của param truyền vào trong URL và đánh lừa nạn nhân thực hiện thao tác. 
+![image](https://github.com/chi442000/CSRF/assets/84699930/59f84737-504d-4b6b-839e-3c63ab20829f)
+
 ####  POST Requests
 ### Attack-testing
 ### Exploit
