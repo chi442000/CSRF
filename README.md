@@ -16,12 +16,15 @@ CSRF ( Cross Site Request Forgery) là kỹ thuật tấn công bằng cách s�
 #### GET Requests
 CSRF with GET Requests là hình thức lợi dụng việc truyền param vào trong URL thông qua HTTP requests, kẻ tấn công có thể thay đổi giá trị của param truyền vào trong URL và đánh lừa nạn nhân thực hiện thao tác. 
 ![image](https://github.com/chi442000/CSRF/assets/84699930/59f84737-504d-4b6b-839e-3c63ab20829f)
+
 Ở phần thay đổi password này cho phép truyền tham số qua URL nên có thể bị tấn công CSRF bằng cách thay đổi param truyền vào URL. 
 
 ![image](https://github.com/chi442000/CSRF/assets/84699930/b13809ba-0830-4915-bed3-75a681650cfd)
+
 ####  POST Requests
 Ngược lại nếu trình duyệt web chấp nhận các yêu cầu POST, nội dung của yêu cầu POST có thể làm phức tạp cuộc tấn công CSRF hơn một chút. Tình huống đơn giản nhất liên quan đến một yêu cầu POST với content-type applica-tion/x-www-form-urlencoded hoặc text/plain. Content-type là một header mà trình duyệt có thể bao gồm khi gửi yêu cầu HTTP. Nó cho người nhận biết phần body của yêu cầu HTTP được mã hóa như thế nào. Ở đây, một ví dụ về một yêu cầu loại text/plain content-type: 
 ![image](https://github.com/chi442000/CSRF/assets/84699930/8a1fee30-dddb-45ee-bc3c-c12211506354)
+
 Bây giờ, trong tình huống này, có thể một trang web độc hại có thể tạo một `form` HTMl ẩn và gửi nó một cách âm thầm đến trang đích mà nhạn nhân không biết. `Form` có thể được sử dụng để gửi yêu cầu POST hoặc GET tới URL và thậm chí có thể gửi các tham số (parameters) và giá trị của chúng. Dưới đây là một ví dụ về một số mã độc:
 ![image](https://github.com/chi442000/CSRF/assets/84699930/ef06a1ed-06ef-4ff1-b706-1d846ef37412)
 ### Attack-testing
