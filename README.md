@@ -30,7 +30,9 @@ Các tài nguyên có thể truy cập thông qua các yêu cầu HTTP GET rất
 #### Explopit GET Requests
 Đơn giản với GET requests ta chỉ cần thay đổi param truyền vào và lừa nạn nhân thực hiện thao tác truy cập vào URL đó. Hoặc có thể lợi dụng thẻ 
 		`<img>` để truyền vào URL chứa param cần tấn công 
-  ![image](https://github.com/chi442000/CSRF/assets/84699930/a4250307-5ea3-462e-80ed-66f247b0bac4)
+
+![image](https://github.com/chi442000/CSRF/assets/84699930/a4250307-5ea3-462e-80ed-66f247b0bac4)
+
 Kết quả là khi truy cập trang web thuộc sở hữu của kẻ tấn công, nó bao gồm thẻ `<img>` trong phản hồi HTTP và trính duyệt sau đó thực hiện yêu cầu HTTP GET. Trình duyệt gửi cookie xác thực, để lấy những gì nó nghĩ là hình ảnh khi thực tế nhận được yêu cầu, xử lý URL trong thuộc tính thẻ src và xử lý thao tác mà hacker mong muốn. 
 #### Explopit POST Requests
 Trong trường hợp POST, mẫu sau có thể được sử dụng.
@@ -38,6 +40,7 @@ Trong trường hợp POST, mẫu sau có thể được sử dụng.
 		2. tương tự như hiển thị bên dưới
 		3. Lưu trữ HTML trên một trang web độc hại hoặc bên thứ ba
 		Gửi liên kết của trang cho (những) nạn nhân và khiến họ nhấp vào liên kết đó.
-  ![image](https://github.com/chi442000/CSRF/assets/84699930/4e55eab6-15d4-46dc-a1e2-6811e21df02c)
+
+![image](https://github.com/chi442000/CSRF/assets/84699930/4e55eab6-15d4-46dc-a1e2-6811e21df02c)
 
 
